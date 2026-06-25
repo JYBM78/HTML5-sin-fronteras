@@ -4,6 +4,29 @@
     <title>Mi primera Web</title> <!-- titulo de la página -->
 </head>
 <body>
+    <form action=" /formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <!-- La propiedad name, hace que el servidor identifique el input como la llave y valor
+         La propiedad placeholder, muestra un texto de ayuda en el input 
+         La propiedad type, define el tipo de input (por defecto es text, email, password, radio. checkbox) -->
+        <input type="texto" id="nombre" name="nombre" placeholder="Nombre"/> <!--ayuda a identificar el input, si da click en la palabra nombre, el curor se posiciona en el input -->
+        <br>
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Escribe tu comentario"name="comentario"></textarea>
+        <br>
+        <!-- <input type="submit"/> Este es un botón -->
+        <br>
+        <button type="button"><img src="img/Centella.png" width="50"/><br>Tipo Botón</button> <!--Botón deber especificado con JS-->
+        <button type="reset">Tipo reset</button> <!--cuando se da click y se envían los datos, restaura los valores de los campor por defecto-->
+        <button type="submit">Tipo submit</button> <!--Enviar el fomrmulario a la ruta especificada en form action, con el método indicado-->
+    </form>
+
+        
     <h1>Mi primer heading</h1>
     <h2>Mi segundo heading</h2>
     <h3>Mi tercer heading</h3>
@@ -29,6 +52,8 @@
             por eso se usa width
          */
     /> 
+    
+
 
 </body>
 </html>
